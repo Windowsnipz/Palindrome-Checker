@@ -98,7 +98,7 @@ main {
 }
 
 .section {
-    margin-top: 75px; /* margin below navbar */
+    margin-top: 50px; /* margin below navbar */
 }
 
 /* Input-wrapper */
@@ -119,6 +119,35 @@ main {
 #text-input {
     border-radius: 5px;
     height: 20px;
+    padding: 5px;
+    margin: 5px 0;
+}
+
+#check-btn {
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+    padding: 8px;
+    font-family: Helvetica, sans-serif;
+    /*font-weight: 900;*/
+    font-size: large;
+    border-radius: 5px;
+    border: 1px solid var(--gray1);
+    color: var(--blue1);
+    background-color: var(--gray1);
+    transition: color 0.2s, background-color 0.2s;
+}
+
+#check-btn:hover {
+    cursor: pointer;
+    color: var(--gray1);
+    background-color: var(--blue1);
+    transition: color 0.2s, background-color 0.2s;
+}
+
+#check-btn:active {
+    color: var(--orange1);
+    background-color: var(--orange1);
 }
 
 /* Footer */
