@@ -10,7 +10,7 @@ function checkWord() {
     if (!isValidInput()) {
         alert('Please input a value')
     } else {
-        alert('Value entered! Good job!')
+        renderResult();
     }
 }
 
@@ -19,4 +19,8 @@ function isValidInput() {
         return false;
     }
     return true;
+}
+
+function renderResult() {
+    
 }
