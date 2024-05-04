@@ -22,5 +22,11 @@ function isValidInput() {
 }
 
 function renderResult() {
-    
+    const text = inputText.value;
+    const reversed = text.split("").reverse().join("")
+    if (text === reversed) {
+        alert('Palindrome!');
+    } else {
+        alert('No palindrome :(');
+    }
 }
