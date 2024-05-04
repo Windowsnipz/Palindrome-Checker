@@ -23,11 +23,11 @@ function isValidInput() {
 }
 
 function renderResult() {
-    const text = inputText.value;
+    const text = inputText.value.toLowerCase().replace(/[^a-z]/g, "");
     const reversed = text.split("").reverse().join("")
     if (text === reversed) {
-        resultText.innerText = `"${text}" is a palindrome!`;
+        resultText.innerText = `${inputText.value} is a palindrome`;
     } else {
-        resultText.innerText = `"${text}" is not a palindrome.`;
+        resultText.innerText = `${inputText.value} is not a palindrome.`;
     }
 }
