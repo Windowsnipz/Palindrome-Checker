@@ -91,6 +91,7 @@ main {
     max-width: 900px;
     color: var(--blue1);
     text-align: center;
+    padding: 20px 0;
     border-radius: 30px;
     background-color: var(--gray1);
     scroll-margin-top: 10vh; /* Ensures correct scrolling from the navbar */
@@ -98,6 +99,26 @@ main {
 
 .section {
     margin-top: 75px; /* margin below navbar */
+}
+
+/* Input-wrapper */
+#input-wrapper {
+    border: 2px solid var(--orange1);
+    border-radius: 30px;
+    width: 50%;
+    margin: auto;
+    margin-top: 25px;
+    padding: 10px;
+    background-color: var(--gray2);
+}
+
+#input-wrapper h4 {
+    padding: 10px 0;
+}
+
+#input-wrapper input {
+    border-radius: 5px;
+    height: 20px;
 }
 
 /* Footer */
