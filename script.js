@@ -1,6 +1,6 @@
 const inputText = document.getElementById('text-input');
 const checkButton = document.getElementById('check-btn');
-
+const resultText =  document.getElementById('result-text');
 
 checkButton.addEventListener('click', checkWord);
 
@@ -8,7 +8,8 @@ checkButton.addEventListener('click', checkWord);
 
 function checkWord() {
     if (!isValidInput()) {
-        alert('Please input a value')
+        resultText.innerText = '';
+        alert('Please input a value');
     } else {
         renderResult();
     }
@@ -25,8 +26,8 @@ function renderResult() {
     const text = inputText.value;
     const reversed = text.split("").reverse().join("")
     if (text === reversed) {
-        alert('Palindrome!');
+        resultText.innerText = `"${text}" is a palindrome!`;
     } else {
-        alert('No palindrome :(');
+        resultText.innerText = `"${text}" is not a palindrome.`;
     }
 }
