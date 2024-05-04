@@ -25,10 +25,13 @@
                 <h1>Check for a Palindrome:</h1>
                 <div id="input-wrapper">
                     <h4>Enter a word to check if it's a palindrome:</h4>
-                    <input id="text-input" type="text" placeholder=" e.g., 'racecar'" autocomplete="off">
-                    <button id="check-btn">Check</button>
+                    <form> <!-- wrapped this in a form so that button submits when enter key is pressed. -->
+                      <input id="text-input" type="text" placeholder=" e.g., 'racecar'" autocomplete="off">
+                      <button id="check-btn">Check</button>
+                    </form>
                 </div>
             </div>
+
             <!-- Remember to add section class in the javascript -->
             <div id="result" class="answer section"> 
               <h3>'word' is not a palindrome</h3>
